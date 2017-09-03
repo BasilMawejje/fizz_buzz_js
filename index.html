@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script src="src/fizzbuzz.js"></script>
 </head>
-<body>
+<body background="img/ca.png" style="background-size: 100px 50px;">
       <form>
         <h1 style="color: #000000;">Fizzbuzz</h1>
         <h3 style="color: #804000;">Rules of the game: </h3>
@@ -21,12 +21,12 @@
           4. Numbers that do not fit any of the conditions above return the number entered.<br /><br />
         </p>
         <input type="number" id="number" min="1" style="width: 100px; height: 20px;"><br /><br />
-        <input type="button" id="submit" value="calculate" class="waves-effect waves-light btn">
+        <input type="button" id="submit" value="calculate" class="waves-effect waves-light btn"><br /><br />
+        <div id="display">
+          <span id="display_message" style="color: green;"></span>
+        </div>
       </form>
       <br />
-      <div id="display">
-        <span id="display_message" style="color: green;"></span>
-      </div>
       <script type="text/javascript">
       $(document).ready(function () {
         var calc = new FizzbuzzCalc
