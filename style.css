@@ -1,7 +1,10 @@
 form{
-  width: 50%;
-  margin: 0 auto;
-  height: auto;
+ width: 50%;
+ margin: 0 auto;
+ height: auto;
+ background-color: #f2f2f2;
+ text-align: center;
+ padding: 25px;
 }
 
 h1{
