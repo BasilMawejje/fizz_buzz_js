@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fizz_Buzz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="src/fizzbuzz.js"></script>
+</head>
+<body>
+      <form>
+        <h1>Fizzbuzz</h1>
+        <input type="number" id="number" min="1" style="width: 100px; height: 20px;"><br /><br />
+        <input type="button" id="submit" value="calculate">
+      </form>
+      <div id="display">
+        <span id="display_message" style="color: green;"></span>
+      </div>
+      <script type="text/javascript">
+      $(document).ready(function () {
+        var calc = new FizzbuzzCalc
+        $('#submit').click(function () {
+          $('#display_message').html('');
+            var input = parseFloat($('#number').val());
+            var output = calc.fizzbuzzRules(input)
+            $('#display_message').html(output);
+          });
+        });
+      </script>
+</body>
+</html>

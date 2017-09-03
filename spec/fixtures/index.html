@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fizzbuzz</title>
+</head>
+<body>
+	<input type="number" min="1" id="number">
+	<input type="submit" value="calculate" id="calculate">
+</body>
+<div>
+  <span id="display_message"></span>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		var calculator = new FizzbuzzCalc();
+		$('#calculate').click(function () {
+			$('#display_message').html('');
+					var input = parseFloat($('#number').val());
+					var result = calculator.fizzbuzzRules(input)
+					$('#display_message').html(result);
+		});
+</script>
+
+</html>

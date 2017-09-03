@@ -15,7 +15,7 @@ FizzbuzzCalc.prototype.fizzbuzzRules = function(number) {
      case (number%5===0):
       return "buzz";
       break;
-      
+
      default:
       return number;
       break;

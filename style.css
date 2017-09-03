@@ -1,0 +1,16 @@
+form{
+  width: 50%;
+  margin: 0 auto;
+  height: auto;
+}
+
+h1{
+  text-align: center;
+}
+
+#display{
+  text-align: center;
+  font-style: italic;
+  font-family: "Times New Roman";
+  font-size: 25px;
+}
